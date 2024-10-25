@@ -37,6 +37,7 @@ n, m = map(int, input().split())
 arr = [list(map(int, input().strip())) for _ in range(n)]
 # index 0층: 벽을 안 부수고 가는 경로, 1층: 벽을 부수고 가는 경로
 v = [[[0,0] for _ in range(m)] for _ in range(n)]  # 3차원 방문 배열
+#v = [[[0] * 2 for _ in range(m)] for _ in range(n)]  # 3차원 방문 배열
 
 # BFS 수행 및 결과 출력
 result = bfs()
